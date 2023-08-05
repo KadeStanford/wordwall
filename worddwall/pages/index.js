@@ -40,6 +40,7 @@ export default function Home() {
         <div className={styles.wordBoxHolder}>
           {wordWall.map((post) => (
             <div
+              key={post.id}
               className={styles.wordBox}
               style={{
                 color: post.font_color,
