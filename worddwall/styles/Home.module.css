@@ -1,0 +1,187 @@
+@font-face {
+  font-family: "Paytone";
+  src: url("/PaytoneOne.ttf") format("truetype");
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: auto;
+  width: 100%;
+  background-color: #3c96eb;
+  font-family: "Paytone", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: auto;
+  width: 95%;
+  color: aliceblue;
+  background-color: #237ccf;
+  padding-bottom: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 5px rgba(195, 221, 255, 0.3);
+}
+
+.containerWord {
+  color: aliceblue;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+.login {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 3%;
+}
+
+.wordBox {
+  font-family: "Paytone", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  min-height: 120px;
+  margin-bottom: 3%;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.wordBoxText {
+  font-family: "Paytone", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  font-size: calc(10px + 0.5vmin);
+}
+
+div.wordBox > div {
+  margin-top: 3%;
+}
+
+.postForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  flex-wrap: wrap;
+  margin-bottom: 3%;
+  min-height: 200px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.postForm > textarea {
+  min-width: 100px;
+  max-width: 200px;
+  min-height: 100px;
+  max-height: 100px;
+  margin-top: 3%;
+  margin-right: 1%;
+  border: none;
+  box-shadow: 0px 0px 0px 5px rgba(28, 95, 184, 0.75);
+  border-radius: 10px;
+}
+
+.charCount {
+  font-size: calc(10px + 0.5vmin);
+  color: aliceblue;
+  margin-top: 4%;
+  margin-right: 1%;
+}
+
+.postButton {
+  width: 100px;
+  height: 30px;
+  box-shadow: 0px 0px 0px 5px rgba(28, 95, 184, 0.75);
+  border: none;
+  background-color: #dcebfa;
+  border-radius: 10px;
+  font-family: "Paytone", sans-serif;
+  margin-top: 10%;
+}
+
+.wordBoxHolder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  overflow-y: scroll;
+  height: 50vh;
+}
+
+.loggedIn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  font-size: calc(10px + 0.1vmin);
+}
+
+.title {
+  text-align: center;
+}
+
+.colorLabel {
+  display: flex;
+  flex-direction: column;
+}
+
+.postForm > input {
+  width: 70px;
+  height: 20px;
+  box-shadow: 0px 0px 0px 5px rgba(28, 95, 184, 0.75);
+  border: none;
+  background-color: #dcebfa;
+  border-radius: 10px;
+  font-family: "Paytone", sans-serif;
+}
+
+.login > button {
+  width: 300px;
+  height: 30px;
+  box-shadow: 0px 0px 0px 5px rgba(28, 95, 184, 0.75);
+  border: none;
+  background-color: #dcebfa;
+  border-radius: 10px;
+  font-family: "Paytone", sans-serif;
+  margin-top: 3%;
+}
+
+.loggedIn > button {
+  width: 300px;
+  height: 30px;
+  box-shadow: 0px 0px 0px 5px rgba(28, 95, 184, 0.75);
+  border: none;
+  background-color: #dcebfa;
+  border-radius: 10px;
+  font-family: "Paytone", sans-serif;
+  margin-top: 3%;
+}
+
+.wordWall {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
