@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Paytone";
-  src: url("/worddwall/public/PaytoneOne.ttf") format("truetype");
+  src: url("/PaytoneOne.ttf") format("truetype");
 }
 
 .main {
@@ -123,7 +123,7 @@ div.wordBox > div {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  width: 100%;
+  width: 500px;
   overflow-y: scroll;
   height: 50vh;
 }
@@ -132,7 +132,8 @@ div.wordBox > div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
+  text-align: center;
   width: 100%;
   font-size: calc(10px + 0.1vmin);
 }
