@@ -39,6 +39,7 @@
 }
 
 .login {
+  font-family: "Paytone", sans-serif;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -105,6 +106,7 @@ div.wordBox > div {
   color: aliceblue;
   margin-top: 4%;
   margin-right: 1%;
+  font-family: "Paytone", sans-serif;
 }
 
 .postButton {
@@ -135,6 +137,7 @@ div.wordBox > div {
   justify-content: center;
   text-align: center;
   width: 100%;
+  font-family: "Paytone", sans-serif;
   font-size: calc(10px + 0.1vmin);
 }
 
@@ -185,4 +188,5 @@ div.wordBox > div {
   align-items: center;
   justify-content: flex-start;
   width: 100%;
+  font-family: "Paytone", sans-serif;
 }
