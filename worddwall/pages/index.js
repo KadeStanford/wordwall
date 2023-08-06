@@ -29,16 +29,31 @@ export default function Home() {
     useEffect(() => {
       async function getWordWall() {
         const { data } = await supabase.from("word_wall").select("*");
-        setWordWall(data);
+        setWordWall(data || []); // If data is null, set an empty array
       }
       getWordWall();
     }, []);
+
+    async function deletePost(dataID) {
+      const { data, error } = await supabase
+        .from("word_wall")
+        .delete()
+        .eq("id", dataID);
+
+      if (error) {
+        console.error("Error deleting post:", error);
+        return;
+      }
+
+      console.log("Post deleted successfully:", data);
+      location.reload();
+    }
 
     return (
       <div>
         <h1>Word Wall</h1>
         <div className={styles.wordBoxHolder}>
-          {wordWall.map((post) => (
+          {wordWall?.map((post) => (
             <div
               key={post.id}
               className={styles.wordBox}
@@ -51,6 +66,17 @@ export default function Home() {
               <div className={styles.postedAt}>
                 {new Date(post.posted_at).toLocaleString()}
               </div>
+
+              {post.posted_by === userEmail ? (
+                <button
+                  className={styles.deleteButton}
+                  onClick={() => deletePost(post.id)} // Pass the post ID here
+                >
+                  Delete
+                </button>
+              ) : (
+                <></>
+              )}
             </div>
           ))}
         </div>
@@ -70,6 +96,7 @@ export default function Home() {
           font_color: fontColor,
           box_color: boxColor,
           posted_at: new Date(),
+          posted_by: userEmail,
         },
       ]);
       console.log(data);
